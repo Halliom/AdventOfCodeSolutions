@@ -1,8 +1,10 @@
 import hashlib
 
+inputcode = "iwrupvqb"
+
 def findNumber(zeroes):
     i = 1
-    while not hashlib.md5(("iwrupvqb" + str(i)).encode('utf-8')).hexdigest().startswith('0' * 5):
+    while not hashlib.md5((inputcode + str(i)).encode('utf-8')).hexdigest().startswith('0' * zeroes):
         i += 1
     print(i)
 
