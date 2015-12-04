@@ -6,7 +6,7 @@ with open("test.txt", "r") as f:
 # Cheeky one-liner
 print(sum(1 if (c == '(') else -1 for c in instr))
 
-# 2nd part
+# PART 2
 floor = 0
 for i in range(len(instr)):
 	if instr[i] == "(":
